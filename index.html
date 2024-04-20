@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a Pune-based web designer and developer, specializing in creating stunning and responsive websites. Explore my portfolio to see my work in front-end and back-end development, UI/UX design, and more. Get in touch to discuss your next project.">
+    <meta name="keywords" content="Divi, DP, UI, UX, portfolio, Divi portfolio, DP portfolio, Divi.netlify.app, Divya S Pawar At Kundane Post Dhamangaon tal and dist Dhule ">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3511eabc55.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/Favicon.png" type="image/x-icon">
+
+</head>
+<body>
+    
+    <div id="loadingText" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 24px; text-align: center;">
+        <p id="helloText"></p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <!-- Your website content goes here -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header" onclick="closeMenuAfterItemClick()">Home</a></li>
+                <li><a href="#about" onclick="closeMenuAfterItemClick()">About</a></li>
+                <li><a href="#services" onclick="closeMenuAfterItemClick()">Services</a></li>
+                <li><a href="#portfolio" onclick="closeMenuAfterItemClick()">Work</a></li>
+                <li><a href="#contact" onclick="closeMenuAfterItemClick()">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Full Stack Developer</p>
+            <h1>Hi, I'm <span>Divya</span> <br> Pawar From India</h1>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------About ------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Divya_Pawar_Pass_PicF.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello, I'm Divya, a budding Java Developer. Although I'm just starting my developer journey, I'm passionate about learning and making a positive impact through my work. I have a solid foundation in developing apps and tools and keep up with the latest trends. I'm dedicated to improving my skills and excited to collaborate on meaningful projects. Let's create something amazing together.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java Full Stack Developer</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Web Devlopment Intern at PHN Technology Pvt Ltd, Pune</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>MCA From SPPU Pune<br>8.70 cgpa</li>
+                        <li><span>2021</span><br>B.Sc From NMU Jalgaon<br>9.70 cgpa</li>
+                        <li><span>2018</span><br>HSC From SMPR Patil jr. college Borvihir<br>71.69 %</li>
+                        <li><span>2016</span><br>SSC From MVK Kundane<br>88.80 % </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- ------------------Services-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>User-Centric Design | Responsive Design | Custom Web Solutions | Visual Design | Interactive Elements |  SEO-Friendly Design</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Wireframing and Prototyping | Information Architecture | Usability Testing | Mobile and Responsive Design</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Mobile-First Design | Icon and Logo Design | Microinteractions | Material Design and Human Interface Guidelines</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------------Portfolio-------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work-1">
+                <img src="images/work-5.png" alt="work-1">
+                <img src="images/work-4.png" alt="work-1">
+                <div class="layer">
+                    <h3>Agricultural Web App</h3>
+                    <p>It helps farmers to improve their productivity and profitability. It helps to providing all kinds of agricultural related 
+                        information to the farmer. The project helps the farmers to sell their agricultural produce and suggest best in practice 
+                        farming process</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg" alt="work-2">
+                <div class="layer">
+                    <h3>MedXpert - Healthcare App</h3>
+                    <p>The main goal of this application is to use anytime anyware. Without visiting the hospital customer can fulfil their
+                        requirements using this application. MedXpert provides 24*7 services to the customer.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-7.jpg" alt="work-3">
+                <img src="images/work-8.jpg" alt="work-3">
+                <img src="images/work-9.jpg" alt="work-3">
+                <div class="layer">
+                    <h3>Travel N Tourism</h3>
+                    <p>The purpose of the Travel N Tourism System is to create a system that automates travel processes and events and to build 
+                       a system that enables all travel-related operation to be carried out.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- certification -->
+
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="certification-list">
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2>Coursera Certified: Introduction to Digital Transformation with
+                    Google Cloud</h2>
+                <p> Verify at:
+                    https://coursera.org/verify/FH3EHUEWLCWL
+                    <br>
+                    Earned on: Oct 28, 2022</p>
+                <a href="images/Coursera_cloud computing certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+            <!-- Duplicate this div for each certification -->
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Coursera Certified: Google Cloud Big Data and Machine Learning
+                    Fundamentals</h2>
+                <p> Verify at:
+                    https://coursera.org/verify/PPD9XK66ZBSW <br>
+                    Earned on: Oct 31, 2022</p>
+                <a href="images/Coursera_certification_BigData_machineLearning.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Udemy Certified: Java Collection Framework + Generics, Lambdas & Stream API</h2>
+                <p> Certification no.: UC-ed497c9f-735e-4597-88fc-ad2c8413bad6 <br>
+                    Earned on: Nov 14, 2022</p>
+                <a href="images/Udemy_Java_certification.jpg" target="_blank">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Udemy Certified: Learn ASP.NET MVC and Entity Framework(DB First)</h2>
+                <p> Certification no.: UC-1f4faff8-5ac6-4bba-9792-ef2941abbd45 <br>
+                    Earned on: Nov 13, 2022</p>
+                <a href="images/Udemy_Asp.net_certificate.jpg" target="_blank">View Certificate</a>
+            </div>
+            <!-- Duplicate this div for each certification -->
+            <div>
+                <i class="fas fa-bolt"></i>
+                <h2>Coursera Certified: How Google does Machine Learning</h2>
+                <p> Verify at:
+                    https://coursera.org/verify/7Q5DKG7WNT7W <br>
+                    Earned on: Oct 31, 2022</p>
+                <a href="images/Coursera_machine_learning.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div>
+                <i class="fas fa-sync-alt"></i>
+
+                <h2>Coursera Certified: Digital Transformation with Google Cloud</h2>
+                <p> Verify at:
+                    https://coursera.org/verify/FH3EHUEWLCWL<br>
+                    Earned on: Oct 28, 2022</p>
+                <a href="images/Digital transformation with google cloud.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Udemy Certified: Python Programming for Beginners</h2>
+                <p> Certification no.: UC-62570ee9-b6a3-4895-972b-9f64995c6d43 <br>
+                    Earned on: April 29, 2023</p>
+                <a href="images/udemy_python.jpg" target="_blank">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Udemy Certified: Cloud Computing and Amazon Web Services(AWS) Fundamentals </h2>
+                <p> Certification no.: UC-f2423517-41b0-43b0-9ebf-d6e67e79056f <br>
+                    Earned on: February 17, 2024</p>
+                <a href="images/cloud_computing_certification.pdf" target="_blank">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> divyasrpawar@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8767520686</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Divya_cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form method="post" id="form" name="stylesheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    <div id="success-message" style="display: none;">
+                        Data submitted successfully!
+                    </div>
+                </form>
+                     <div id="loadingMessage" style="display: none;">Submitting...</div>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Divya. Made with <i class="fa-solid fa-heart"></i> by Divii</p>
+    </div>
+</div>
+</div>
+    
+
+<!--     tab links about section /////////////////////////////////////////////////-->
+    
+        <script>
+        var tablinks=document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+<!-- sidemenu////////////////////////////////////////////////////////////////////// -->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        function closeMenuAfterItemClick() {
+        closemenu();
+    }
+
+    </script>
+   
+   <!-- Google sheet///////////////////////////////////////////////////////////////////// -->
+    
+    <script>
+        let url='https://script.google.com/macros/s/AKfycby8F0iOacEcyC9Mb0LgU3PkXMlqWyBv8J9k8k7ClfvoU38_8kwrOHnkOeVpOuuom-Yp/exec'
+        let form = document.querySelector('#form');
+        let successMessage = document.getElementById('success-message');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let data = new FormData(form);
+        fetch(url, {
+            method: 'POST',
+            body: data,
+        })
+        .then((res) => res.text())
+        .then((finalRes) => {
+            console.log(finalRes);
+            successMessage.style.display = 'block'; // Display the success message
+            form.reset();
+            setTimeout(() => {
+                successMessage.style.display = 'none'; // Hide the success message after 5 seconds
+            }, 5000);
+        });
+    });
+    </script>
+
+    <!-- Preload Script//////////////// -->
+    <script>
+        // Array of greetings in different languages
+        const greetings = [
+            'Hello',        // English
+            'नमस्ते',      // Hindi (Devanagari script)
+            'Hola',         // Spanish
+            'Bonjour',      // French
+            'Ciao',         // Italian
+            'Konnichiwa',   // Japanese
+            'Hello',        // English
+            
+        ];
+
+        const helloText = document.getElementById('helloText');
+        let index = 0;
+
+        // Function to display greetings one by one
+        function displayGreetings() {
+            if (index < greetings.length) {
+                helloText.textContent = greetings[index];
+                index++;
+            } else {
+                // After all greetings are displayed, reveal the content
+                document.getElementById('loadingText').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }
+        }
+
+        // Call the displayGreetings function at intervals
+        setInterval(displayGreetings, 200); // Change the interval as needed
+    </script>
+    
+</body>
+</html>
